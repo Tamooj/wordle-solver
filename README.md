@@ -6,7 +6,7 @@ first).
 
 ## Status
 
-Live as an installable PWA at [tamooj.github.io/wordle-solver](https://tamooj.github.io/wordle-solver/).
+Live as an installable PWA at [tamooj.github.io/wentropy](https://tamooj.github.io/wentropy/).
 Works fully offline once installed. See [`docs/handoff.md`](docs/handoff.md)
 for the original architecture writeup and porting notes.
 
