@@ -136,8 +136,8 @@ function WordleSolver() {
 
   return (
     <div style={s.page}>
-      <div style={{ fontSize: 11, letterSpacing: 6, color: "#818384", marginBottom: 4 }}>Wordle</div>
-      <h1 style={{ margin: "0 0 6px", fontSize: 28, fontWeight: 900, letterSpacing: 2 }}>SOLVER</h1>
+      <div style={{ fontSize: 11, letterSpacing: 6, color: "#818384", marginBottom: 4 }}>Wordle Solver</div>
+      <h1 style={{ margin: "0 0 6px", fontSize: 28, fontWeight: 900, letterSpacing: 2 }}>WENTROPY</h1>
       <div style={{ fontSize: 11, color: "#818384", marginBottom: 24 }}>
         {WORDS.length} words · {results.length} matches
       </div>

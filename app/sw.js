@@ -1,6 +1,6 @@
 // Bump this on every deploy that changes any precached file — it's the only
 // thing that tells the browser there's a new version to fetch and swap in.
-const CACHE_NAME = "wordle-solver-v1";
+const CACHE_NAME = "wentropy-v2";
 
 const PRECACHE_URLS = [
   "./",

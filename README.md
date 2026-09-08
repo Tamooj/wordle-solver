@@ -1,4 +1,4 @@
-# Wordle Solver
+# Wentropy
 
 A Wordle assistant that takes the current board state and returns a ranked list
 of valid candidate words, sorted by Shannon entropy (highest information gain
@@ -6,14 +6,16 @@ first).
 
 ## Status
 
-Working implementation exists as a Claude.ai artifact (`src/wordle-solver.jsx`).
-Not yet ported outside that sandbox. See [`docs/handoff.md`](docs/handoff.md)
-for the full architecture writeup, dead ends already ruled out, and porting
-options under consideration (standalone HTML, PWA, Capacitor/iOS, React Native).
+Live as an installable PWA at [tamooj.github.io/wordle-solver](https://tamooj.github.io/wordle-solver/).
+Works fully offline once installed. See [`docs/handoff.md`](docs/handoff.md)
+for the original architecture writeup and porting notes.
 
 ## Layout
 
-- `src/wordle-solver.jsx` — working implementation (React/JSX), currently
-  sandbox-shaped (embedded word list split across two string constants to fit
-  the 128KB artifact cap). Will be reworked as the port target is decided.
-- `docs/handoff.md` — architecture notes and porting considerations.
+- `app/` — the deployed PWA (buildless: CDN React/Babel, no build step).
+  Auto-deploys to GitHub Pages on push via
+  [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+- `src/wordle-solver.jsx` — original Claude.ai artifact implementation, kept
+  for reference. `app/` is the actively maintained version.
+- `docs/handoff.md` — architecture notes and porting considerations from the
+  original sandbox-to-PWA handoff.
